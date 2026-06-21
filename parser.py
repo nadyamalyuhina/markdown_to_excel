@@ -89,7 +89,7 @@ class MarkdownParser:
             self.current_link = m.group(1)
             return
 
-        # 5. Продолжение текста вопроса (пустые строки тоже сохраняем)
+        # 5. Продолжение текста вопроса (пустые строки тоже сохраняются)
         if self.current_number:
             self.current_text.append(line)
 
